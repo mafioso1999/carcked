@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdministrationPanel.ConfigWelcomePage_22_1TabName" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="AdvancedConfig.Access" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="AdvancedConfig.AcknowledgeMessageDelay" xml:space="preserve">
+    <value>Acknowledge Message Delay</value>
+  </data>
+  <data name="AdvancedConfig.AcknowledgeMessageDelay.Description" xml:space="preserve">
+    <value>Determines the time taken for an unacknowledged event to be acknowledged.</value>
+  </data>
+  <data name="AdvancedConfig.AcquireWakeLock" xml:space="preserve">
+    <value>Acquire Wake Lock</value>
+  </data>
+  <data name="AdvancedConfig.AcquireWakeLock.Description" xml:space="preserve">
+    <value>Prevent sleep, auto-locking, screen savers, and inactivity disconnection while you're idle.</value>
+  </data>
+  <data name="AdvancedConfig.AdminPage" xml:space="preserve">
+    <value>Admin Page</value>
+  </data>
+  <data name="AdvancedConfig.AgentKeepAliveInterval" xml:space="preserve">
+    <value>Agent Keep Alive Interval</value>
+  </data>
+  <data name="AdvancedConfig.AgentKeepAliveInterval.Description" xml:space="preserve">
+    <value>Governs the keep alive signal interval for access client.</value>
+  </data>
+  <data name="AdvancedConfig.All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="AdvancedConfig.AllowGuestInitiatedFileTransfer" xml:space="preserve">
+    <value>Allow Guest Initiated File Transfer</value>
+  </data>
+  <data name="AdvancedConfig.AllowGuestInitiatedFileTransfer.Description" xml:space="preserve">
+    <value>Allow the guest to initiate file transfers to the host machine.</value>
+  </data>
+  <data name="AdvancedConfig.AllowLoginCredentialsStorage" xml:space="preserve">
+    <value>Allow Login Credentials Storage</value>
+  </data>
+  <data name="AdvancedConfig.AllowLoginCredentialsStorage.Description" xml:space="preserve">
+    <value>Shows an item within the tray icon's context menu clicking on which would open a form that would help guests to store their Windows login credentials.</value>
+  </data>
+  <data name="AdvancedConfig.AllowPasswordAutoComplete" xml:space="preserve">
+    <value>Allow Password Auto-Complete</value>
+  </data>
+  <data name="AdvancedConfig.AllowPasswordAutoComplete.Description" xml:space="preserve">
+    <value>Enables password auto-complete for user logins.</value>
+  </data>
+  <data name="AdvancedConfig.AlwaysDeleteSession" xml:space="preserve">
+    <value>Always Delete Session</value>
+  </data>
+  <data name="AdvancedConfig.AlwaysDeleteSession.Description" xml:space="preserve">
+    <value>Automatically delete support sessions on exit.</value>
+  </data>
+  <data name="AdvancedConfig.AlwaysOnTop" xml:space="preserve">
+    <value>Always On Top</value>
+  </data>
+  <data name="AdvancedConfig.AlwaysOnTop.Description" xml:space="preserve">
+    <value>Keep the host and guest client windows on top of other windows.</value>
+  </data>
+  <data name="AdvancedConfig.Annotations" xml:space="preserve">
+    <value>Annotations</value>
+  </data>
+  <data name="AdvancedConfig.AnyClientWindow" xml:space="preserve">
+    <value>Any Client Window</value>
+  </data>
+  <data name="AdvancedConfig.ApplicationConfiguration" xml:space="preserve">
+    <value>Application Configuration</value>
+  </data>
+  <data name="AdvancedConfig.ApplicationKeepAliveInterval" xml:space="preserve">
+    <value>Application Keep Alive Interval</value>
+  </data>
+  <data name="AdvancedConfig.ApplicationKeepAliveInterval.Description" xml:space="preserve">
+    <value>Determines how often a client will send application-level keep alives to the server.</value>
+  </data>
+  <data name="AdvancedConfig.ApplyChanges" xml:space="preserve">
+    <value>Apply Changes</value>
+  </data>
+  <data name="AdvancedConfig.AuthenticationRequired" xml:space="preserve">
+    <value>Minimum Authentication Factor Count</value>
+  </data>
+  <data name="AdvancedConfig.AuthenticationRequired.Description" xml:space="preserve">
+    <value>Determines the minimum number of authentication factors that must be associated with a user in order for the user to log into the Host and/or Administration page.</value>
+  </data>
+  <data name="AdvancedConfig.AuthenticationRequired.Option1" xml:space="preserve">
+    <value>No required minimum number of authentication factors</value>
+  </data>
+  <data name="AdvancedConfig.AuthenticationRequired.Option2" xml:space="preserve">
+    <value>Require at least one authentication factor (e.g., password only)</value>
+  </data>
+  <data name="AdvancedConfig.AuthenticationRequired.Option3" xml:space="preserve">
+    <value>Require at least two authentication factors (e.g., password and OTP)</value>
+  </data>
+  <data name="AdvancedConfig.AutoConsent" xml:space="preserve">
+    <value>Auto Consent</value>
+  </data>
+  <data name="AdvancedConfig.AutoConsent.Description" xml:space="preserve">
+    <value>Automatically consent to control if no user process is running on the guest machine.</value>
+  </data>
+  <data name="AdvancedConfig.AutoConsentCountdown" xml:space="preserve">
+    <value>Auto Consent Countdown</value>
+  </data>
+  <data name="AdvancedConfig.AutoConsentCountdown.Description" xml:space="preserve">
+    <value>Enable a countdown before the consent-to-connect prompt disappears and the host is automatically connected to a session.</value>
+  </data>
+  <data name="AdvancedConfig.AutoConsentToBackstage" xml:space="preserve">
+    <value>Auto Consent to Backstage</value>
+  </data>
+  <data name="AdvancedConfig.AutoConsentToBackstage.Description" xml:space="preserve">
+    <value>Enable switching to the backstage logon session without another consent prompt.</value>
+  </data>
+  <data name="AdvancedConfig.AutoRenewSessionTimeout" xml:space="preserve">
+    <value>Should Revalidate Access Token</value>
+  </data>
+  <data name="AdvancedConfig.AutoRenewSessionTimeout.Description" xml:space="preserve">
+    <value>Check this setting to automatically disconnect the host from sessions after the time specified for AccessTokenExpireSeconds</value>
+  </data>
+  <data name="AdvancedConfig.BeepOnConnect" xml:space="preserve">
+    <value>Beep On Connect</value>
+  </data>
+  <data name="AdvancedConfig.BeepOnConnect.Description" xml:space="preserve">
+    <value>Make the host client beep when a guest connects to the session.</value>
+  </data>
+  <data name="AdvancedConfig.BitmaskSettings" xml:space="preserve">
+    <value>Bitmask Settings</value>
+  </data>
+  <data name="AdvancedConfig.BitmaskSettings.Caution" xml:space="preserve">
+    <value>Caution: Changing bitmask settings can cause undesirable results. Ensure you understand how the host and/or guest clients will change before saving setting values.</value>
+  </data>
+  <data name="AdvancedConfig.BlankGuestMonitor" xml:space="preserve">
+    <value>Blank Guest Monitor</value>
+  </data>
+  <data name="AdvancedConfig.BlankGuestMonitor.Description" xml:space="preserve">
+    <value>Blanks the guest's monitor(s) and displays a blank screen message.</value>
+  </data>
+  <data name="AdvancedConfig.BlockGuestInput" xml:space="preserve">
+    <value>Block Guest Input</value>
+  </data>
+  <data name="AdvancedConfig.BlockGuestInput.Description" xml:space="preserve">
+    <value>Blocks the guest's input when the host shares their screen.</value>
+  </data>
+  <data name="AdvancedConfig.BlockIpAddresses" xml:space="preserve">
+    <value>Block IP Addresses</value>
+  </data>
+  <data name="AdvancedConfig.BlockIpAddresses.Description" xml:space="preserve">
+    <value>Block one or more IP addresses in a comma-separated list, or specify a range of IP addresses by using CIDR notation.</value>
+  </data>
+  <data name="AdvancedConfig.CapturesDirectory" xml:space="preserve">
+    <value>Captures Directory</value>
+  </data>
+  <data name="AdvancedConfig.Characters" xml:space="preserve">
+    <value>characters</value>
+  </data>
+  <data name="AdvancedConfig.ClearAnnotations" xml:space="preserve">
+    <value>Clear Annotations</value>
+  </data>
+  <data name="AdvancedConfig.ClearAnnotations.Description" xml:space="preserve">
+    <value>Clears any annotations from the screen.</value>
+  </data>
+  <data name="AdvancedConfig.ClientMenuAnnotationHelperSettings" xml:space="preserve">
+    <value>Annotation and Helper</value>
+  </data>
+  <data name="AdvancedConfig.ClientMenuEssentialsSettings" xml:space="preserve">
+    <value>Essentials</value>
+  </data>
+  <data name="AdvancedConfig.ClientMenuParticipantScreenCaptureSettings" xml:space="preserve">
+    <value>Participant and Screen Capture</value>
+  </data>
+  <data name="AdvancedConfig.ClientMenuSystemOptionsSettings" xml:space="preserve">
+    <value>System Options</value>
+  </data>
+  <data name="AdvancedConfig.ClientMenuToolboxFileTransferSettings" xml:space="preserve">
+    <value>Toolbox and File Transfer</value>
+  </data>
+  <data name="AdvancedConfig.ClientMenuViewSoundMessagesSettings" xml:space="preserve">
+    <value>View, Sound and Messages</value>
+  </data>
+  <data name="AdvancedConfig.ClientServiceTimeout" xml:space="preserve">
+    <value>Client Service Timeout</value>
+  </data>
+  <data name="AdvancedConfig.ClientServiceTimeout.Description" xml:space="preserve">
+    <value>Sets the delay before the end-of-session dialog disappears.</value>
+  </data>
+  <data name="AdvancedConfig.ColorTheme" xml:space="preserve">
+    <value>Host Client Color Theme</value>
+  </data>
+  <data name="AdvancedConfig.ColorTheme.Description" xml:space="preserve">
+    <value>Sets the application color theme for the host client.</value>
+  </data>
+  <data name="AdvancedConfig.CommandCharacterReturnCount" xml:space="preserve">
+    <value>Max Command Character Return Count</value>
+  </data>
+  <data name="AdvancedConfig.CommandCharacterReturnCount.Description" xml:space="preserve">
+    <value>Determines the max number of characters returned for commands ran via the Commands tab.</value>
+  </data>
+  <data name="AdvancedConfig.CommandExecutionTimeout" xml:space="preserve">
+    <value>Command Execution Timeout</value>
+  </data>
+  <data name="AdvancedConfig.CommandExecutionTimeout.Description" xml:space="preserve">
+    <value>Determines how long after execution to kill a command.</value>
+  </data>
+  <data name="AdvancedConfig.Configuration" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="AdvancedConfig.ConsentTimeout" xml:space="preserve">
+    <value>Consent Timeout</value>
+  </data>
+  <data name="AdvancedConfig.ConsentTimeout.Description" xml:space="preserve">
+    <value>When a partner provides consent to control, that consent will expire after this many seconds.</value>
+  </data>
+  <data name="AdvancedConfig.CookieSameSiteMode" xml:space="preserve">
+    <value>SameSite Cookie Attribute</value>
+  </data>
+  <data name="AdvancedConfig.CookieSameSiteMode.Description" xml:space="preserve">
+    <value>Specifies the value of the SameSite attribute for browser cookies set by Control.</value>
+  </data>
+  <data name="AdvancedConfig.DarkTheme" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="AdvancedConfig.Days" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="AdvancedConfig.DefaultScreenQuality" xml:space="preserve">
+    <value>Default Screen Quality Level</value>
+  </data>
+  <data name="AdvancedConfig.DefaultScreenQuality.Description" xml:space="preserve">
+    <value>Determines the default screen capture quality level.</value>
+  </data>
+  <data name="AdvancedConfig.DefaultSession" xml:space="preserve">
+    <value>Default Session Settings</value>
+  </data>
+  <data name="AdvancedConfig.DefaultSession.Description" xml:space="preserve">
+    <value>Enables specific host client features by default for all sessions.</value>
+  </data>
+  <data name="AdvancedConfig.DefaultSoundMode" xml:space="preserve">
+    <value>Default Sound Mode</value>
+  </data>
+  <data name="AdvancedConfig.DefaultSoundMode.Description" xml:space="preserve">
+    <value>Sets the default sound mode for all sessions of a session type.</value>
+  </data>
+  <data name="AdvancedConfig.DefaultValueTitleFormat" xml:space="preserve">
+    <value>Default: {0}</value>
+  </data>
+  <data name="AdvancedConfig.DirectorySettings" xml:space="preserve">
+    <value>Directory Settings</value>
+  </data>
+  <data name="AdvancedConfig.DirectorySettings.Description" xml:space="preserve">
+    <value>Directory settings change the directory to which files are saved. Directories can be specified using absolute or relative file paths.</value>
+  </data>
+  <data name="AdvancedConfig.Disable" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="AdvancedConfig.DisableClipboardCapture" xml:space="preserve">
+    <value>Disable Clipboard Capture</value>
+  </data>
+  <data name="AdvancedConfig.DisableClipboardCapture.Description" xml:space="preserve">
+    <value>Disable clipboard capture in a session.</value>
+  </data>
+  <data name="AdvancedConfig.DisableHostClientMenuItems" xml:space="preserve">
+    <value>Disable Host Client Menu Items</value>
+  </data>
+  <data name="AdvancedConfig.DisconnectParticipant" xml:space="preserve">
+    <value>Disconnect Participant</value>
+  </data>
+  <data name="AdvancedConfig.DisconnectParticipant.Description" xml:space="preserve">
+    <value>Force disconnects a participant from a session.</value>
+  </data>
+  <data name="AdvancedConfig.DockControlPanel" xml:space="preserve">
+    <value>Dock Control Panel</value>
+  </data>
+  <data name="AdvancedConfig.DockControlPanel.Description" xml:space="preserve">
+    <value>Docks various control panel windows.</value>
+  </data>
+  <data name="AdvancedConfig.DuoSettings" xml:space="preserve">
+    <value>Duo 2FA Settings</value>
+  </data>
+  <data name="AdvancedConfig.DuoSettings.Description" xml:space="preserve">
+    <value>Once configured with a Duo account, ScreenConnect will send a login request to a user's mobile device when that user attempts to log into the instance. Once the user approves the login request on their mobile device, the user can proceed to the ScreenConnect Host page.</value>
+  </data>
+  <data name="AdvancedConfig.DuoSettings.DuoApiHostnameHeader" xml:space="preserve">
+    <value>DuoApiHostname</value>
+  </data>
+  <data name="AdvancedConfig.DuoSettings.DuoIntegrationKeyHeader" xml:space="preserve">
+    <value>DuoIntegrationKey</value>
+  </data>
+  <data name="AdvancedConfig.DuoSettings.DuoSecretKeyHeader" xml:space="preserve">
+    <value>DuoSecretKey</value>
+  </data>
+  <data name="AdvancedConfig.EmptySessionProgramsToStart" xml:space="preserve">
+    <value>Default Backstage Programs</value>
+  </data>
+  <data name="AdvancedConfig.EmptySessionProgramsToStart.Description" xml:space="preserve">
+    <value>Specifies the programs that are automatically started upon entering the backstage logon session.</value>
+  </data>
+  <data name="AdvancedConfig.EnableClipboardHelpHelper" xml:space="preserve">
+    <value>Enable Clipboard Help (Helper)</value>
+  </data>
+  <data name="AdvancedConfig.EnableClipboardHelpHelper.Description" xml:space="preserve">
+    <value>Let the helper automatically search using the text in the host's clipboard.</value>
+  </data>
+  <data name="AdvancedConfig.EnableSSLForEmail" xml:space="preserve">
+    <value>Enable SSL for Email</value>
+  </data>
+  <data name="AdvancedConfig.EnableSSLForEmail.Description" xml:space="preserve">
+    <value>Specifies whether or not SMTP requests are to use SSL.</value>
+  </data>
+  <data name="AdvancedConfig.Essentials" xml:space="preserve">
+    <value>Essentials</value>
+  </data>
+  <data name="AdvancedConfig.ExitConnectionBanner" xml:space="preserve">
+    <value>Exit (Connection Banner)</value>
+  </data>
+  <data name="AdvancedConfig.ExitConnectionBanner.Description" xml:space="preserve">
+    <value>Enables the "Exit" option for support sessions in the connection banner's menu.</value>
+  </data>
+  <data name="AdvancedConfig.FilesDirectory" xml:space="preserve">
+    <value>Files Directory</value>
+  </data>
+  <data name="AdvancedConfig.FileTransfer" xml:space="preserve">
+    <value>File Transfer</value>
+  </data>
+  <data name="AdvancedConfig.FullScreenWhenMaximized" xml:space="preserve">
+    <value>Full Screen When Maximized</value>
+  </data>
+  <data name="AdvancedConfig.FullScreenWhenMaximized.Description" xml:space="preserve">
+    <value>View guest machines in full screen mode when host client is maximized.</value>
+  </data>
+  <data name="AdvancedConfig.Guest" xml:space="preserve">
+    <value>Guest</value>
+  </data>
+  <data name="AdvancedConfig.GuestInformationRefreshInterval" xml:space="preserve">
+    <value>Guest Information Refresh Interval</value>
+  </data>
+  <data name="AdvancedConfig.GuestInformationRefreshInterval.Caution" xml:space="preserve">
+    <value>Caution: Setting this value lower than 300 seconds may adversely affect performance.</value>
+  </data>
+  <data name="AdvancedConfig.GuestInformationRefreshInterval.Description" xml:space="preserve">
+    <value>Controls the number of seconds between refreshes of guest information in the General tab on the Host page.</value>
+  </data>
+  <data name="AdvancedConfig.GuestScreenPreview" xml:space="preserve">
+    <value>Guest Screen Preview</value>
+  </data>
+  <data name="AdvancedConfig.GuestScreenPreview.Description" xml:space="preserve">
+    <value>Controls the quality and size of the guest desktop screenshot displayed on the host page.</value>
+  </data>
+  <data name="AdvancedConfig.Helper" xml:space="preserve">
+    <value>Helper</value>
+  </data>
+  <data name="AdvancedConfig.HelpProviderName" xml:space="preserve">
+    <value>Help Provider Name</value>
+  </data>
+  <data name="AdvancedConfig.HelpProviderName.Description" xml:space="preserve">
+    <value>Specifies the default help provider.</value>
+  </data>
+  <data name="AdvancedConfig.HideConnectionBanner" xml:space="preserve">
+    <value>Hide (Connection Banner)</value>
+  </data>
+  <data name="AdvancedConfig.HideConnectionBanner.Description" xml:space="preserve">
+    <value>Enables the "Hide" option in the connection banner's menu.</value>
+  </data>
+  <data name="AdvancedConfig.HideGuestWallpaper" xml:space="preserve">
+    <value>Hide Guest Wallpaper</value>
+  </data>
+  <data name="AdvancedConfig.HideGuestWallpaper.Description" xml:space="preserve">
+    <value>Hide the user's desktop wallpaper in a session.</value>
+  </data>
+  <data name="AdvancedConfig.Host" xml:space="preserve">
+    <value>Host</value>
+  </data>
+  <data name="AdvancedConfig.HostAuthenticationDuration" xml:space="preserve">
+    <value>Host Authentication Duration</value>
+  </data>
+  <data name="AdvancedConfig.HostAuthenticationDuration.Description" xml:space="preserve">
+    <value>Determines the length for which authentication tickets are issued/reissued.</value>
+  </data>
+  <data name="AdvancedConfig.HostClientDeviceFingerprintValidationLevel" xml:space="preserve">
+    <value>Host Client Device Fingerprint Validation Level</value>
+  </data>
+  <data name="AdvancedConfig.HostClientDeviceFingerprintValidationLevel.Description" xml:space="preserve">
+    <value>Specifies if incoming connections should be rejected if the IP address doesn't match the one in the included access token.</value>
+  </data>
+  <data name="AdvancedConfig.HostClientDeviceFingerprintValidationLevel.DescriptionHigh" xml:space="preserve">
+    <value>High: passes if the access token IP address matches the connection IP address</value>
+  </data>
+  <data name="AdvancedConfig.HostClientDeviceFingerprintValidationLevel.DescriptionLow" xml:space="preserve">
+    <value>Low: like Medium, but will also pass if access token and connection IP addresses are from different address families (ex. IPv4 vs IPv6)</value>
+  </data>
+  <data name="AdvancedConfig.HostClientDeviceFingerprintValidationLevel.DescriptionMedium" xml:space="preserve">
+    <value>Medium: like High, but will also pass if the IP address from either the access token or the connection is unavailable</value>
+  </data>
+  <data name="AdvancedConfig.HostClientDeviceFingerprintValidationLevel.DescriptionNone" xml:space="preserve">
+    <value>None: always passes</value>
+  </data>
+  <data name="AdvancedConfig.HostClientDeviceFingerprintValidationLevelHigh" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="AdvancedConfig.HostClientDeviceFingerprintValidationLevelLow" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="AdvancedConfig.HostClientDeviceFingerprintValidationLevelMedium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="AdvancedConfig.HostClientDeviceFingerprintValidationLevelNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="AdvancedConfig.HostConnectionTimeout" xml:space="preserve">
+    <value>Input Idle Disconnect Time Seconds</value>
+  </data>
+  <data name="AdvancedConfig.HostConnectionTimeout.Description" xml:space="preserve">
+    <value>Disconnects an idle host from session after a certain number of seconds.</value>
+  </data>
+  <data name="AdvancedConfig.HostPage" xml:space="preserve">
+    <value>Host Page</value>
+  </data>
+  <data name="AdvancedConfig.HostSessionDisplayLimit" xml:space="preserve">
+    <value>Host Session Display Limit</value>
+  </data>
+  <data name="AdvancedConfig.HostSessionDisplayLimit.Description" xml:space="preserve">
+    <value>Specifies the maximum number of sessions to display on the host page.</value>
+  </data>
+  <data name="AdvancedConfig.HostTransferTimeout" xml:space="preserve">
+    <value>Host Transfer Timeout</value>
+  </data>
+  <data name="AdvancedConfig.HostTransferTimeout.Description" xml:space="preserve">
+    <value>Specifies how long a host must be logged out of the ScreenConnect web portal before they are ineligible to receive a transferred session.</value>
+  </data>
+  <data name="AdvancedConfig.IsBackstageDefault" xml:space="preserve">
+    <value>Is Backstage Default</value>
+  </data>
+  <data name="AdvancedConfig.IsBackstageDefault.Description" xml:space="preserve">
+    <value>Join into the backstage logon session by default.</value>
+  </data>
+  <data name="AdvancedConfig.IsUserAllowedToRequireConsent" xml:space="preserve">
+    <value>Is User Allowed to Require Consent</value>
+  </data>
+  <data name="AdvancedConfig.IsUserAllowedToRequireConsent.Description" xml:space="preserve">
+    <value>Enables the "Require Consent" toggle in the guest client UI</value>
+  </data>
+  <data name="AdvancedConfig.KeepClientOnTop" xml:space="preserve">
+    <value>Keep Client On Top</value>
+  </data>
+  <data name="AdvancedConfig.KeepClientOnTop.Description" xml:space="preserve">
+    <value>Selects whether or not the status window is always on top.</value>
+  </data>
+  <data name="AdvancedConfig.KeepDeviceAwake" xml:space="preserve">
+    <value>Keep Device Awake</value>
+  </data>
+  <data name="AdvancedConfig.LightTheme" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="AdvancedConfig.LockGuestMachine" xml:space="preserve">
+    <value>Lock Guest Machine</value>
+  </data>
+  <data name="AdvancedConfig.LockGuestMachine.Description" xml:space="preserve">
+    <value>Locks guest machine when host disconnects.</value>
+  </data>
+  <data name="AdvancedConfig.LockMachineOnConnect" xml:space="preserve">
+    <value>Lock Machine On Connect</value>
+  </data>
+  <data name="AdvancedConfig.LockMachineOnConnect.Description" xml:space="preserve">
+    <value>Automatically lock the guest machine when a host connects.</value>
+  </data>
+  <data name="AdvancedConfig.ManageCredentials" xml:space="preserve">
+    <value>Manage Credentials</value>
+  </data>
+  <data name="AdvancedConfig.ManageCredentials.Description" xml:space="preserve">
+    <value>Stores credentials to enter at a login screen.</value>
+  </data>
+  <data name="AdvancedConfig.ManageSharedToolbox" xml:space="preserve">
+    <value>Manage Shared Toolbox</value>
+  </data>
+  <data name="AdvancedConfig.ManageSharedToolbox.Description" xml:space="preserve">
+    <value>Opens dialog to manage the shared toolbox.</value>
+  </data>
+  <data name="AdvancedConfig.Meeting" xml:space="preserve">
+    <value>Meeting</value>
+  </data>
+  <data name="AdvancedConfig.MeetingGuestAttendeesWindow" xml:space="preserve">
+    <value>Meeting Guest Attendees Window</value>
+  </data>
+  <data name="AdvancedConfig.MeetingHostAttendeeWindow" xml:space="preserve">
+    <value>Meeting Host Attendee Window</value>
+  </data>
+  <data name="AdvancedConfig.MeetingHostPresentersWindow" xml:space="preserve">
+    <value>Meeting Host Presenters Window</value>
+  </data>
+  <data name="AdvancedConfig.Messages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="AdvancedConfig.Milliseconds" xml:space="preserve">
+    <value>milliseconds</value>
+  </data>
+  <data name="AdvancedConfig.MuteMicrophone" xml:space="preserve">
+    <value>Mute Microphone</value>
+  </data>
+  <data name="AdvancedConfig.MuteMicrophone.Description" xml:space="preserve">
+    <value>Mutes the host's microphone.</value>
+  </data>
+  <data name="AdvancedConfig.NavigateToolboxFolder" xml:space="preserve">
+    <value>Navigate Toolbox Folder</value>
+  </data>
+  <data name="AdvancedConfig.NavigateToolboxFolder.Description" xml:space="preserve">
+    <value>Navigates to the toolbox folder from the client window.</value>
+  </data>
+  <data name="AdvancedConfig.OpenConnectionBanner" xml:space="preserve">
+    <value>Open (Connection Banner)</value>
+  </data>
+  <data name="AdvancedConfig.OpenConnectionBanner.Description" xml:space="preserve">
+    <value>Enables the "Open" option in the connection banner's menu.</value>
+  </data>
+  <data name="AdvancedConfig.OpenSessionTimeout" xml:space="preserve">
+    <value>Access Token Expire Seconds</value>
+  </data>
+  <data name="AdvancedConfig.OpenSessionTimeout.Description" xml:space="preserve">
+    <value>Specifies the period before a host will have to relaunch a session (Support, Access, or Meeting). Also determines how long a downloaded launcher file can be used to connect to a session.</value>
+  </data>
+  <data name="AdvancedConfig.OtherSettings" xml:space="preserve">
+    <value>Other Settings</value>
+  </data>
+  <data name="AdvancedConfig.PageIdleTimeout" xml:space="preserve">
+    <value>Page Idle Timeout</value>
+  </data>
+  <data name="AdvancedConfig.PageIdleTimeout.Description" xml:space="preserve">
+    <value>Idle users will be logged out of the Host and Administration pages after this many seconds.</value>
+  </data>
+  <data name="AdvancedConfig.PageSettings" xml:space="preserve">
+    <value>Page Settings</value>
+  </data>
+  <data name="AdvancedConfig.Participants" xml:space="preserve">
+    <value>Participants</value>
+  </data>
+  <data name="AdvancedConfig.PauseVideo" xml:space="preserve">
+    <value>Pause Video</value>
+  </data>
+  <data name="AdvancedConfig.PauseVideo.Description" xml:space="preserve">
+    <value>Pauses the recording of the current session.</value>
+  </data>
+  <data name="AdvancedConfig.Percent" xml:space="preserve">
+    <value>percent</value>
+  </data>
+  <data name="AdvancedConfig.Pixels" xml:space="preserve">
+    <value>pixels</value>
+  </data>
+  <data name="AdvancedConfig.QuickSettings" xml:space="preserve">
+    <value>Quick Settings</value>
+  </data>
+  <data name="AdvancedConfig.Reboot" xml:space="preserve">
+    <value>Reboot</value>
+  </data>
+  <data name="AdvancedConfig.Reboot.Description" xml:space="preserve">
+    <value>Reboot the computer to either normal or safe mode.</value>
+  </data>
+  <data name="AdvancedConfig.ReceiveFiles" xml:space="preserve">
+    <value>Receive Files</value>
+  </data>
+  <data name="AdvancedConfig.ReceiveFiles.Description" xml:space="preserve">
+    <value>Retrieves one or more files from the guest machine via the session.</value>
+  </data>
+  <data name="AdvancedConfig.ReceiveFolder" xml:space="preserve">
+    <value>Receive Folder</value>
+  </data>
+  <data name="AdvancedConfig.ReceiveFolder.Description" xml:space="preserve">
+    <value>Retrieves entire folders from the guest machine via the session.</value>
+  </data>
+  <data name="AdvancedConfig.RecordVideo" xml:space="preserve">
+    <value>Record Video</value>
+  </data>
+  <data name="AdvancedConfig.RecordVideo.Description" xml:space="preserve">
+    <value>Records video of the current session.</value>
+  </data>
+  <data name="AdvancedConfig.ReinstallWarning" xml:space="preserve">
+    <value>In order for the new settings to take effect, you will need to reinstall your access clients. Do you wish to proceed?</value>
+  </data>
+  <data name="AdvancedConfig.RelayAddressableUri" xml:space="preserve">
+    <value>Relay Addressable URI</value>
+  </data>
+  <data name="AdvancedConfig.RelayAddressableUri.Description" xml:space="preserve">
+    <value>Specifies the addressable host URI of the relay.</value>
+  </data>
+  <data name="AdvancedConfig.RemotePrinting" xml:space="preserve">
+    <value>Disable Remote Printing</value>
+  </data>
+  <data name="AdvancedConfig.RemotePrinting.Description" xml:space="preserve">
+    <value>Controls whether or not users can print remotely.</value>
+  </data>
+  <data name="AdvancedConfig.RemotePrintingActivated" xml:space="preserve">
+    <value>Activate Remote Printing</value>
+  </data>
+  <data name="AdvancedConfig.RemoveDisconnectedSessionFromList" xml:space="preserve">
+    <value>Session Expire Seconds</value>
+  </data>
+  <data name="AdvancedConfig.RemoveDisconnectedSessionFromList.Description" xml:space="preserve">
+    <value>Number of seconds before which a disconnected session expires from the list of sessions.</value>
+  </data>
+  <data name="AdvancedConfig.RequestParticipantShare" xml:space="preserve">
+    <value>Request Participant Share</value>
+  </data>
+  <data name="AdvancedConfig.RequestParticipantShare.Description" xml:space="preserve">
+    <value>Requests that a guest share their screen.</value>
+  </data>
+  <data name="AdvancedConfig.RestartInstanceWarning" xml:space="preserve">
+    <value>Applying changes to web.config will restart your instance. Do you wish to proceed?</value>
+  </data>
+  <data name="AdvancedConfig.RestoreDefaults" xml:space="preserve">
+    <value>Restore Defaults</value>
+  </data>
+  <data name="AdvancedConfig.RestoreDefaults.AppConfigWarning" xml:space="preserve">
+    <value>You have elected to restore the default values for the settings on this page. Doing so will require you to reinstall your access agents in order for the changes to take effect. Do you wish to proceed?</value>
+  </data>
+  <data name="AdvancedConfig.RestoreDefaults.WebConfigWarning" xml:space="preserve">
+    <value>You have elected to restore the default values for the settings on this page. Doing so will restart your instance. Do you wish to proceed?</value>
+  </data>
+  <data name="AdvancedConfig.RestrictToIpAddresses" xml:space="preserve">
+    <value>Restrict to IP Addresses</value>
+  </data>
+  <data name="AdvancedConfig.RestrictToIpAddresses.Caution" xml:space="preserve">
+    <value>Caution: Incorrectly setting these IP restrictions can prevent you from logging into the Host and/or Admin pages.</value>
+  </data>
+  <data name="AdvancedConfig.RestrictToIpAddresses.Description" xml:space="preserve">
+    <value>Allow access to the Host and/or Admin pages from one or more IP addresses only. You can name multiple IP addresses in a comma-separated list, or you can specify a range of IP addresses by using CIDR notation.</value>
+  </data>
+  <data name="AdvancedConfig.RetryInterval" xml:space="preserve">
+    <value>Retry Interval</value>
+  </data>
+  <data name="AdvancedConfig.RetryInterval.Description" xml:space="preserve">
+    <value>Time delay before a client attempts to reconnect to the server.</value>
+  </data>
+  <data name="AdvancedConfig.RunTool" xml:space="preserve">
+    <value>Run Tool</value>
+  </data>
+  <data name="AdvancedConfig.RunTool.Description" xml:space="preserve">
+    <value>Runs a tool from the toolbox on the guest machine.</value>
+  </data>
+  <data name="AdvancedConfig.RunToolElevated" xml:space="preserve">
+    <value>Run Tool Elevated</value>
+  </data>
+  <data name="AdvancedConfig.RunToolElevated.Description" xml:space="preserve">
+    <value>Runs a tool from the toolbox on the guest machine with elevated privileges.</value>
+  </data>
+  <data name="AdvancedConfig.SameSiteModeLax" xml:space="preserve">
+    <value>Lax</value>
+  </data>
+  <data name="AdvancedConfig.SameSiteModeNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="AdvancedConfig.SameSiteModeStrict" xml:space="preserve">
+    <value>Strict</value>
+  </data>
+  <data name="AdvancedConfig.SaveAndApplyChanges" xml:space="preserve">
+    <value>Save &amp; Apply</value>
+  </data>
+  <data name="AdvancedConfig.SaveError.AppConfigDescription" xml:space="preserve">
+    <value>The following error occured while attempting to save changes to app.config:</value>
+  </data>
+  <data name="AdvancedConfig.SaveError.Title" xml:space="preserve">
+    <value>Unable to Save Settings</value>
+  </data>
+  <data name="AdvancedConfig.SaveError.WebConfigDescription" xml:space="preserve">
+    <value>The following error occured while attempting to save changes to web.config:</value>
+  </data>
+  <data name="AdvancedConfig.ScreenCapture" xml:space="preserve">
+    <value>Screen Capture</value>
+  </data>
+  <data name="AdvancedConfig.ScreenQualityHigh" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="AdvancedConfig.ScreenQualityLow" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="AdvancedConfig.ScreenQualityMedium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="AdvancedConfig.Seconds" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="AdvancedConfig.SelectAnnotationMode" xml:space="preserve">
+    <value>Select Annotation Mode</value>
+  </data>
+  <data name="AdvancedConfig.SelectAnnotationMode.Description" xml:space="preserve">
+    <value>Allows for the selection of an annotation mode (Invisible, ViewOnly, HostDraw, AllDraw).</value>
+  </data>
+  <data name="AdvancedConfig.SelectLogonSession" xml:space="preserve">
+    <value>Select Logon Session</value>
+  </data>
+  <data name="AdvancedConfig.SelectLogonSession.Description" xml:space="preserve">
+    <value>Allows the host to choose which guest logon session to view.</value>
+  </data>
+  <data name="AdvancedConfig.SelectProviderHelper" xml:space="preserve">
+    <value>Select Provider (Helper)</value>
+  </data>
+  <data name="AdvancedConfig.SelectProviderHelper.Description" xml:space="preserve">
+    <value>Select which help provider to use for the Helper.</value>
+  </data>
+  <data name="AdvancedConfig.SelectQuality" xml:space="preserve">
+    <value>Select Quality</value>
+  </data>
+  <data name="AdvancedConfig.SelectQuality.Description" xml:space="preserve">
+    <value>Selects the screen capture quality of a session (High, Medium, Low).</value>
+  </data>
+  <data name="AdvancedConfig.SelectSoundCaptureMode" xml:space="preserve">
+    <value>Select Sound Capture Mode</value>
+  </data>
+  <data name="AdvancedConfig.SelectSoundCaptureMode.Description" xml:space="preserve">
+    <value>Selects a method of capturing sound (Silent, Speakers, HostMicrophone, AllMicrophones).</value>
+  </data>
+  <data name="AdvancedConfig.SelectStrokeThicknessAnnotation" xml:space="preserve">
+    <value>Select Stroke Thickness (Annotation)</value>
+  </data>
+  <data name="AdvancedConfig.SelectStrokeThicknessAnnotation.Description" xml:space="preserve">
+    <value>Changes the stroke thickness of the annotation tool.</value>
+  </data>
+  <data name="AdvancedConfig.SelectToolAnnotation" xml:space="preserve">
+    <value>Select Tool (Annotation)</value>
+  </data>
+  <data name="AdvancedConfig.SelectToolAnnotation.Description" xml:space="preserve">
+    <value>Selects the annotation tool.</value>
+  </data>
+  <data name="AdvancedConfig.SelectToolHelper" xml:space="preserve">
+    <value>Select Tool (Helper)</value>
+  </data>
+  <data name="AdvancedConfig.SelectToolHelper.Description" xml:space="preserve">
+    <value>Select the active helper tool.</value>
+  </data>
+  <data name="AdvancedConfig.SendClipboardKeystrokes" xml:space="preserve">
+    <value>Send Clipboard Keystrokes</value>
+  </data>
+  <data name="AdvancedConfig.SendClipboardKeystrokes.Description" xml:space="preserve">
+    <value>Sends your clipboard to the remote machine as keystrokes</value>
+  </data>
+  <data name="AdvancedConfig.SendCtrlAltDel" xml:space="preserve">
+    <value>Send Ctrl-Alt-Del</value>
+  </data>
+  <data name="AdvancedConfig.SendCtrlAltDel.Description" xml:space="preserve">
+    <value>Sends a CTRL+ALT+DEL signal to the connected guest.</value>
+  </data>
+  <data name="AdvancedConfig.SendFiles" xml:space="preserve">
+    <value>Send Files</value>
+  </data>
+  <data name="AdvancedConfig.SendFiles.Description" xml:space="preserve">
+    <value>Sends specific files to the guest machine via the session.</value>
+  </data>
+  <data name="AdvancedConfig.SendFolder" xml:space="preserve">
+    <value>Send Folder</value>
+  </data>
+  <data name="AdvancedConfig.SendFolder.Description" xml:space="preserve">
+    <value>Sends entire folders to the guest machine via the session.</value>
+  </data>
+  <data name="AdvancedConfig.SendWindowSystemCommand" xml:space="preserve">
+    <value>Send Window System Command</value>
+  </data>
+  <data name="AdvancedConfig.SendWindowSystemCommand.Description" xml:space="preserve">
+    <value>Sends Windows system commands via the client window (Close, Minimize, Maximize, FullScreen).</value>
+  </data>
+  <data name="AdvancedConfig.Sessions" xml:space="preserve">
+    <value>sessions</value>
+  </data>
+  <data name="AdvancedConfig.SessionSettings" xml:space="preserve">
+    <value>Session Settings</value>
+  </data>
+  <data name="AdvancedConfig.SessionTypeDisplayOrder" xml:space="preserve">
+    <value>Session Type Display Order</value>
+  </data>
+  <data name="AdvancedConfig.SessionTypeDisplayOrder.Description" xml:space="preserve">
+    <value>Specifies the top-to-bottom order of session type tabs on the navigation bar.</value>
+  </data>
+  <data name="AdvancedConfig.SetPreviewScreenQuality" xml:space="preserve">
+    <value>Set Preview Screen Quality</value>
+  </data>
+  <data name="AdvancedConfig.SetPreviewScreenSize" xml:space="preserve">
+    <value>Set Preview Screen Size</value>
+  </data>
+  <data name="AdvancedConfig.Setting" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="AdvancedConfig.SettingNotConfigurableOnCloud.Message" xml:space="preserve">
+    <value>(Setting not configurable for cloud instances.)</value>
+  </data>
+  <data name="AdvancedConfig.Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="AdvancedConfig.ShareClipboard" xml:space="preserve">
+    <value>Share Clipboard</value>
+  </data>
+  <data name="AdvancedConfig.ShareClipboard.Description" xml:space="preserve">
+    <value>Syncs clipboard content between host and guest.</value>
+  </data>
+  <data name="AdvancedConfig.ShareMyDesktop" xml:space="preserve">
+    <value>Share My Desktop</value>
+  </data>
+  <data name="AdvancedConfig.ShareMyDesktop.Description" xml:space="preserve">
+    <value>Begin sharing one or more of the host's monitors with the connected guest.</value>
+  </data>
+  <data name="AdvancedConfig.ShowCloseSessionDialog" xml:space="preserve">
+    <value>Show Close Session Dialog</value>
+  </data>
+  <data name="AdvancedConfig.ShowCloseSessionDialog.Description" xml:space="preserve">
+    <value>Display the dialog to delete the session upon support session disconnect.</value>
+  </data>
+  <data name="AdvancedConfig.ShowHostConnectedBanner" xml:space="preserve">
+    <value>Show Host Connected Banner</value>
+  </data>
+  <data name="AdvancedConfig.ShowHostConnectedBanner.Description" xml:space="preserve">
+    <value>Show the connection banner when connecting to a support or access session.</value>
+  </data>
+  <data name="AdvancedConfig.ShowHostFeedbackSurvey" xml:space="preserve">
+    <value>Show Host Feedback Survey</value>
+  </data>
+  <data name="AdvancedConfig.ShowHostFeedbackSurvey.Description" xml:space="preserve">
+    <value>Randomly display a small feedback survey for hosts at the end of a session. This survey appears sporadically and will help us improve the product.</value>
+  </data>
+  <data name="AdvancedConfig.ShowNotificationBalloonOnConnect" xml:space="preserve">
+    <value>Show Notification Balloon On Connect</value>
+  </data>
+  <data name="AdvancedConfig.ShowNotificationBalloonOnConnect.Description" xml:space="preserve">
+    <value>Display the notification balloon from system tray icon when hosts connect to guest machines.</value>
+  </data>
+  <data name="AdvancedConfig.ShowNotificationBalloonOnHide" xml:space="preserve">
+    <value>Show Notification Balloon On Hide</value>
+  </data>
+  <data name="AdvancedConfig.ShowNotificationBalloonOnHide.Description" xml:space="preserve">
+    <value>Show the notification balloon when minimizing the guest client.</value>
+  </data>
+  <data name="AdvancedConfig.ShowSystemTrayIcon" xml:space="preserve">
+    <value>Show System Tray Icon</value>
+  </data>
+  <data name="AdvancedConfig.ShowSystemTrayIcon.Description" xml:space="preserve">
+    <value>Display the ScreenConnect icon in the guest's system tray.</value>
+  </data>
+  <data name="AdvancedConfig.Sound" xml:space="preserve">
+    <value>Sound</value>
+  </data>
+  <data name="AdvancedConfig.SoundCaptureModeAllMicrophones" xml:space="preserve">
+    <value>All Microphones</value>
+  </data>
+  <data name="AdvancedConfig.SoundCaptureModeHostMicrophone" xml:space="preserve">
+    <value>Host Microphone</value>
+  </data>
+  <data name="AdvancedConfig.SoundCaptureModeSilent" xml:space="preserve">
+    <value>Silent</value>
+  </data>
+  <data name="AdvancedConfig.SoundCaptureModeSpeakers" xml:space="preserve">
+    <value>Speakers</value>
+  </data>
+  <data name="AdvancedConfig.SpecifyProxyServer" xml:space="preserve">
+    <value>Specify Proxy Server</value>
+  </data>
+  <data name="AdvancedConfig.SpecifyProxyServer.Description" xml:space="preserve">
+    <value>Allows the guest client to store proxy server information and credentials.</value>
+  </data>
+  <data name="AdvancedConfig.Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="AdvancedConfig.StopParticipantShare" xml:space="preserve">
+    <value>Stop Participant Share</value>
+  </data>
+  <data name="AdvancedConfig.StopParticipantShare.Description" xml:space="preserve">
+    <value>Stops a participant from sharing their screen.</value>
+  </data>
+  <data name="AdvancedConfig.StopVideo" xml:space="preserve">
+    <value>Stop Video</value>
+  </data>
+  <data name="AdvancedConfig.StopVideo.Description" xml:space="preserve">
+    <value>Stops the recording of the current session.</value>
+  </data>
+  <data name="AdvancedConfig.Support" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="AdvancedConfig.SupportAccessGuestRender" xml:space="preserve">
+    <value>Support\Access Guest Render</value>
+  </data>
+  <data name="AdvancedConfig.SupportAccessGuestRenderWithDock" xml:space="preserve">
+    <value>Support\Access Guest Render With Dock</value>
+  </data>
+  <data name="AdvancedConfig.SupportAccessGuestRenderWithoutDock" xml:space="preserve">
+    <value>Support\Access Guest Render Without Dock</value>
+  </data>
+  <data name="AdvancedConfig.SupportAccessGuestWindow" xml:space="preserve">
+    <value>Support\Access Guest Window</value>
+  </data>
+  <data name="AdvancedConfig.SupportAccessHostWindow" xml:space="preserve">
+    <value>Support\Access Host Window</value>
+  </data>
+  <data name="AdvancedConfig.SupportAndAccessFullScreen" xml:space="preserve">
+    <value>Support And Access Full Screen</value>
+  </data>
+  <data name="AdvancedConfig.SupportAndAccessFullScreen.Description" xml:space="preserve">
+    <value>Enable full-screen mode when client is maximized in support and access sessions.</value>
+  </data>
+  <data name="AdvancedConfig.SuspendHostControl" xml:space="preserve">
+    <value>Suspend Host Control</value>
+  </data>
+  <data name="AdvancedConfig.SuspendHostControl.Description" xml:space="preserve">
+    <value>Prevent the host from controlling the guest's keyboard and mouse upon initial connection.</value>
+  </data>
+  <data name="AdvancedConfig.SuspendMyInput" xml:space="preserve">
+    <value>Suspend My Input</value>
+  </data>
+  <data name="AdvancedConfig.SuspendMyInput.Description" xml:space="preserve">
+    <value>Prevents the host from controlling the guest machine's mouse and keyboard.</value>
+  </data>
+  <data name="AdvancedConfig.TakeScreenshotToClipboard" xml:space="preserve">
+    <value>Take Screenshot To Clipboard</value>
+  </data>
+  <data name="AdvancedConfig.TakeScreenshotToClipboard.Description" xml:space="preserve">
+    <value>Captures the guest's screen and saves the image to the clipboard.</value>
+  </data>
+  <data name="AdvancedConfig.TakeScreenshotToFile" xml:space="preserve">
+    <value>Take Screenshot To File</value>
+  </data>
+  <data name="AdvancedConfig.TakeScreenshotToFile.Description" xml:space="preserve">
+    <value>Captures the guest's screen and saves the image to a file.</value>
+  </data>
+  <data name="AdvancedConfig.Toolbox" xml:space="preserve">
+    <value>Toolbox</value>
+  </data>
+  <data name="AdvancedConfig.ToolboxDirectory" xml:space="preserve">
+    <value>Toolbox Directory</value>
+  </data>
+  <data name="AdvancedConfig.TrustDeviceExpireDays" xml:space="preserve">
+    <value>"Trust this device" Duration</value>
+  </data>
+  <data name="AdvancedConfig.TrustDeviceExpireDays.Description" xml:space="preserve">
+    <value>Specifies the number of days to skip the 2FA prompt after an authentication with "Trust this device" checked.</value>
+  </data>
+  <data name="AdvancedConfig.UndockControlPanel" xml:space="preserve">
+    <value>Undock Control Panel</value>
+  </data>
+  <data name="AdvancedConfig.UndockControlPanel.Description" xml:space="preserve">
+    <value>Undocks various control panel windows from the side of the screen.</value>
+  </data>
+  <data name="AdvancedConfig.UnshareMyDesktop" xml:space="preserve">
+    <value>Unshare My Desktop</value>
+  </data>
+  <data name="AdvancedConfig.UnshareMyDesktop.Description" xml:space="preserve">
+    <value>Stop sharing the host's monitor(s) with the connected guest.</value>
+  </data>
+  <data name="AdvancedConfig.UpdateAgentVersion" xml:space="preserve">
+    <value>Automatically Update Agent Version</value>
+  </data>
+  <data name="AdvancedConfig.UpdateAgentVersion.Description" xml:space="preserve">
+    <value>Enables the server to automatically update old clients upon server upgrade.</value>
+  </data>
+  <data name="AdvancedConfig.UsePersistentCookies" xml:space="preserve">
+    <value>Use Persistent Cookies</value>
+  </data>
+  <data name="AdvancedConfig.UsePersistentCookies.Description" xml:space="preserve">
+    <value>Specifies whether to use persistent cookies vs session cookies for authentication.</value>
+  </data>
+  <data name="AdvancedConfig.Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="AdvancedConfig.VideoAuditClipLength" xml:space="preserve">
+    <value>Video Audit Clip Length</value>
+  </data>
+  <data name="AdvancedConfig.VideoAuditClipLength.Description" xml:space="preserve">
+    <value>Determines the length of each segment when capturing video.</value>
+  </data>
+  <data name="AdvancedConfig.View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="AdvancedConfig.WebConfiguration" xml:space="preserve">
+    <value>Web Configuration</value>
+  </data>
+  <data name="AdvancedConfig.WebServerAddressableUri" xml:space="preserve">
+    <value>Web Server Addressable URI</value>
+  </data>
+  <data name="AdvancedConfig.WebServerAddressableUri.Description" xml:space="preserve">
+    <value>Specifies the addressable host URI of the web server.</value>
+  </data>
+</root>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <User>
+    <CreationDate>2024-02-24T19:57:26.8813677Z</CreationDate>
+    <Email>admin@poc.com</Email>
+    <IsApproved>true</IsApproved>
+    <IsLockedOut>false</IsLockedOut>
+    <LastActivityDate>2025-05-05T18:26:45.0928668Z</LastActivityDate>
+    <LastLockoutDate>0001-01-01T00:00:00</LastLockoutDate>
+    <LastLoginDate>2025-05-05T18:26:45.0928668Z</LastLoginDate>
+    <LastPasswordChangedDate>2025-03-28T21:19:16.9992541Z</LastPasswordChangedDate>
+    <PasswordAttemptWindowStartTime>0001-01-01T00:00:00</PasswordAttemptWindowStartTime>
+    <InvalidPasswordWindowAttemptCount>0</InvalidPasswordWindowAttemptCount>
+    <InvalidPasswordAbsoluteAttemptCount>0</InvalidPasswordAbsoluteAttemptCount>
+    <Name>admin</Name>
+    <PasswordHashHistory>
+      <base64Binary>AL2Qku6fMFg1Q6gWBn6mPwDp/OhiebIKYkQFgH7s+1plZ3gIYHMxSMss/1siKX2zwUFAT2EAPVDeiVDNyeQPUk4p5+zvoQkuI8LQs4oPhCal4Scp4OBBsoiR81cxC/bhRKYipUDvQ+0a1gvOZC8kNyjom1utVq2kse96QzbK4nE=</base64Binary>
+      <base64Binary>ABUIlHv9qF/1HSyswJXTnpxZ+srKpQWg5aJVsDVLQXwd/aAbWQe2eYAEdETYL9JDw1NDiz2tAIKB5I5EHGkCHv+c3FKDkb8b4Kuy9n3X5or3V4u5kILI0q3TsYUeY9Yv4CNTkp033h1+xCX4YR9vfqRisKJpCSYdYnuIH3XeRc0=</base64Binary>
+      <base64Binary>AJHXGAUq7EXmf6yP7IpinhVewjCgitjjQ9s0e17Ct5wBjPT7TL10N3lM7qrq03JSUx7jnPVzl4gYQFtFKbZ2L2OQ41BgrTnkDQgrX9DSGBs2vKoKXn9nvsFQz8invgrGMyVdtCk+Bbt2li/KdDfoVF92J+bcmj338YWXWexv62Y=</base64Binary>
+    </PasswordHashHistory>
+    <Roles>
+      <string>Control Administrator</string>
+    </Roles>
+  </User>
+  <User>
+    <Comment />
+    <CreationDate>2025-05-05T18:29:12.7423427Z</CreationDate>
+    <Email>mafiso.io@protomail.com</Email>
+    <IsApproved>true</IsApproved>
+    <IsLockedOut>false</IsLockedOut>
+    <LastActivityDate>2025-05-05T18:44:26.0205087Z</LastActivityDate>
+    <LastLockoutDate>0001-01-01T00:00:00</LastLockoutDate>
+    <LastLoginDate>2025-05-05T18:44:26.0205087Z</LastLoginDate>
+    <LastPasswordChangedDate>2025-05-05T18:42:55.3723468Z</LastPasswordChangedDate>
+    <PasswordAttemptWindowStartTime>0001-01-01T00:00:00</PasswordAttemptWindowStartTime>
+    <InvalidPasswordWindowAttemptCount>0</InvalidPasswordWindowAttemptCount>
+    <InvalidPasswordAbsoluteAttemptCount>0</InvalidPasswordAbsoluteAttemptCount>
+    <PasswordQuestion />
+    <Name>Administrator</Name>
+    <DisplayName />
+    <PasswordHashHistory>
+      <base64Binary>AGQI0fZzAqG/uc1WLcV93o71nXyD3klMpxsVp0G+f9Ph3CkbEAELa2g4EhOiUczRpl70PlsJctSOK+OoDzoUQoYvCVYdu+nNgnNNVwrNvT0DGThjduft/4W0mJlspEgDIoSJXXbwxMzz2/xOBO0+nohJ1u3xGXo6wS4/8kYfDb4=</base64Binary>
+      <base64Binary>AFwk2j8n52QSN2DszvgPX8Csolcc2ghg1eEqJzJyq9XgMa+BRyhyf9Z8+KfuRD3YiMmfnF/DdjGfOkh89ovIG4QNQnlRxzOAiQzxk1CRVWaEiiOfwHV/coGMPPotzCNQgmr07ILnp9BIT1Npgk567AQ1TIywtf3+9/N/LVyiLyA=</base64Binary>
+    </PasswordHashHistory>
+    <Roles>
+      <string>mafiso</string>
+    </Roles>
+  </User>
+</Users>

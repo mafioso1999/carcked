@@ -1,0 +1,16 @@
+<SessionGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SessionGroup Name="All Sessions" SessionType="Support" SessionFilter="" SubgroupExpressions="" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="My Sessions" SessionType="Support" SessionFilter="Host = $USERNAME" SubgroupExpressions="" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="Requested Sessions" SessionType="Support" SessionFilter="Host = ''" SubgroupExpressions="" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="connected" SessionType="Support" SessionFilter="GuestConnectedCount &gt; 0" SubgroupExpressions="" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="new" SessionType="Support" SessionFilter="Name LIKE 'Untitled Session' AND GuestConnectedCount &gt; 0" SubgroupExpressions="" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="All Meetings" SessionType="Meeting" SessionFilter="" SubgroupExpressions="" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="My Meetings" SessionType="Meeting" SessionFilter="Host = $USERNAME" SubgroupExpressions="" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="All Machines by Company" SessionType="Access" SessionFilter="" SubgroupExpressions="CustomProperty1" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="All Machines by OS" SessionType="Access" SessionFilter="" SubgroupExpressions="GuestOperatingSystemName, GuestOperatingSystemVersion" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="Outdated Clients" SessionType="Access" SessionFilter="GuestClientVersion &lt;&gt; $SERVERVERSION AND GuestClientVersion &lt;&gt; ''" SubgroupExpressions="" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="Host Connected" SessionType="Access" SessionFilter="HostConnectedCount &gt; 0" SubgroupExpressions="" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="Guest Connected" SessionType="Access" SessionFilter="GuestConnectedCount &gt; 0" SubgroupExpressions="" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="Recently Accessed" SessionType="Access" SessionFilter="LastHostConnectedEventTime &gt; $1DAYSAGO" SubgroupExpressions="" CreationDate="2025-05-03T21:28:34" />
+  <SessionGroup Name="Offline" SessionType="Access" SessionFilter="LastConnectedEventTime &lt; $30DAYSAGO" SubgroupExpressions="" CreationDate="2025-05-03T21:28:34" />
+</SessionGroups>

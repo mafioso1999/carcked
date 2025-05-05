@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExtensionManifest>
+	<Version>1.3.3</Version>
+	<Name>Advanced Configuration Editor</Name>
+	<Author>ConnectWise Labs</Author>
+	<ShortDescription>A simplified way to edit the web.config and app.config files. Requires 19.5+</ShortDescription>
+	<Components>
+		<WebServiceReference SourceFile="Service.ashx" />
+		<ClientScriptInitializer SourceFile="Initializer.js" />
+		<WebResourcesDefinition SourceFile="Web_21_3.en-US.resx" MaxProductVersionExclusive="21.4" />
+		<WebResourcesDefinition SourceFile="Web_21_8.en-US.resx" MinProductVersionInclusive="21.4" MaxProductVersionExclusive="21.9"/>
+		<WebResourcesDefinition SourceFile="Web_22_1.en-US.resx" MinProductVersionInclusive="21.9" MaxProductVersionExclusive="22.2"/>
+		<WebResourcesDefinition SourceFile="Web.en-US.resx" MinProductVersionInclusive="22.2" />
+		<AdministrationTabDefinition SourceFile="ConfigWelcomePage_21_3.ascx" MaxProductVersionExclusive="21.4" />
+		<AdministrationTabDefinition SourceFile="ConfigWelcomePage_21_8.ascx" MinProductVersionInclusive="21.4" MaxProductVersionExclusive="21.9"/>
+		<AdministrationTabDefinition SourceFile="ConfigWelcomePage_22_1.ascx" MinProductVersionInclusive="21.9" MaxProductVersionExclusive="22.2"/>
+		<AdministrationTabDefinition SourceFile="ConfigWelcomePage.ascx" MinProductVersionInclusive="22.2" />
+	</Components>
+</ExtensionManifest>

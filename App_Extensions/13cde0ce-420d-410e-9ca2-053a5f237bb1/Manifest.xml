@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExtensionManifest>
+	<Version>2.1.3</Version>
+	<Name>Remote Diagnostics Toolkit</Name>
+	<Author>ConnectWise Labs</Author>
+	<ShortDescription>Add additional tabs on the Host page to view and manage a device's processes, software, event log, and services. Requires 22.8+</ShortDescription>
+	<RequiredLicenseCapabilities>LoadPremiumExtension</RequiredLicenseCapabilities>
+	<Components>
+		<ClientScriptInitializer SourceFile="Initializer.js" />
+		<WebServiceReference SourceFile="Service.ashx" />
+		<WebResourcesDefinition SourceFile="Web.en-US.resx" />
+	</Components>
+	<Settings>
+		<Setting Name="EventLogRequestCount" IsServerOnly="false">
+			<Description>The number of Entries requested from the Event Log (or similar system). Limited to less than 100.</Description>
+			<DefaultValue>10</DefaultValue>
+		</Setting>
+	</Settings>
+</ExtensionManifest>

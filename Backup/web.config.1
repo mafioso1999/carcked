@@ -1,0 +1,279 @@
+<configuration>
+ <location path="Login.aspx">
+  <appSettings>
+   <add key="MaxLongestTicketReissueIntervalSeconds" value="0" />
+   <add key="MinAuthenticationFactorCount" value="0" />
+   <add key="RestrictToIPs" value="" />
+   <add key="BlockIPs" value="" />
+  </appSettings>
+ </location>
+ <location path="Host.aspx">
+  <appSettings>
+   <add key="MaxLongestTicketReissueIntervalSeconds" value="36000" />
+   <add key="MinAuthenticationFactorCount" value="0" />
+   <add key="RestrictToIPs" value="" />
+   <add key="BlockIPs" value="" />
+  </appSettings>
+ </location>
+ <location path="Services/PageService.ashx">
+  <appSettings>
+   <add key="MaxLongestTicketReissueIntervalSeconds" value="36000" />
+   <add key="MinAuthenticationFactorCount" value="0" />
+   <add key="RestrictToIPs" value="" />
+   <add key="BlockIPs" value="" />
+  </appSettings>
+ </location>
+ <location path="Services/MailService.ashx">
+  <appSettings>
+   <add key="MaxLongestTicketReissueIntervalSeconds" value="36000" />
+   <add key="MinAuthenticationFactorCount" value="0" />
+   <add key="RestrictToIPs" value="" />
+   <add key="BlockIPs" value="" />
+  </appSettings>
+ </location>
+ <location path="Administration.aspx">
+  <appSettings>
+   <add key="MaxLongestTicketReissueIntervalSeconds" value="1800" />
+   <add key="MinAuthenticationFactorCount" value="0" />
+   <add key="RestrictToIPs" value="" />
+   <add key="BlockIPs" value="" />
+  </appSettings>
+ </location>
+ <location path="Services">
+  <appSettings>
+   <add key="MaxLongestTicketReissueIntervalSeconds" value="1800" />
+   <add key="MinAuthenticationFactorCount" value="0" />
+   <add key="RestrictToIPs" value="" />
+   <add key="BlockIPs" value="" />
+  </appSettings>
+ </location>
+ <system.web>
+  <compilation defaultLanguage="c#" debug="false" targetFramework="4.7.2">
+   <assemblies>
+    <add assembly="System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <add assembly="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+    <add assembly="System.Data.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+    <add assembly="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+    <add assembly="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+    <add assembly="System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <add assembly="System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <add assembly="System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <add assembly="ScreenConnect.Web" />
+    <add assembly="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+   </assemblies>
+   <expressionBuilders>
+    <add expressionPrefix="WebResources" type="ScreenConnect.WebResourcesExpressionBuilder" />
+   </expressionBuilders>
+  </compilation>
+  <authentication mode="Forms">
+   <forms cookieless="UseCookies" loginUrl="~/Login" defaultUrl="~/Host" timeout="525600" />
+  </authentication>
+  <machineKey decryptionKey="7DC97BED0F457894A0F96A6A4551E2E88E02AB1C7E293E37" validationKey="29CDCB6C1F57BF508B008FDF2F5239A9C497E79F" />
+  <membership defaultProvider="InternalMembershipProvider">
+   <providers>
+    <clear />
+    <add name="InternalMembershipProvider" enabled="true" type="ScreenConnect.InternalMembershipProvider" maxInvalidPasswordWindowAttempts="8" minRequiredNonAlphanumericCharacters="0" minRequiredPasswordLength="8" passwordAttemptWindow="10" passwordStrengthRegularExpression="" maxInvalidPasswordAbsoluteAttempts="50" />
+   </providers>
+  </membership>
+  <pages enableSessionState="false" enableEventValidation="false" enableViewStateMac="true" theme="Solid" validateRequest="false" viewStateEncryptionMode="Never" pageBaseType="ScreenConnect.ThemeablePage, ScreenConnect.Web">
+   <namespaces>
+    <add namespace="System.IO" />
+    <add namespace="System.Collections.Generic" />
+    <add namespace="System.Web.Configuration" />
+    <add namespace="System.Net" />
+    <add namespace="System.Net.Mail" />
+    <add namespace="System.Net.Configuration" />
+    <add namespace="System.Linq" />
+    <add namespace="System.Drawing" />
+    <add namespace="ScreenConnect" />
+   </namespaces>
+   <controls>
+    <add tagPrefix="asp" namespace="System.Web.UI" assembly="System.Web.Extensions" />
+    <add tagPrefix="asp" namespace="System.Web.UI.WebControls" assembly="System.Web.Extensions" />
+    <add tagPrefix="asp" namespace="ScreenConnect" assembly="ScreenConnect.Web" />
+   </controls>
+  </pages>
+  <httpModules>
+   <remove name="UrlAuthorization" />
+   <remove name="FileAuthorization" />
+   <remove name="FormsAuthentication" />
+   <add name="SetupModule" type="ScreenConnect.SetupModule, ScreenConnect.Web" />
+   <add name="CompressionModule" type="ScreenConnect.CompressionModule, ScreenConnect.Web" />
+   <add name="WebAuthenticationModule" type="ScreenConnect.WebAuthenticationModule, ScreenConnect.Web" />
+   <add name="IPSecurityModule" type="ScreenConnect.IPSecurityModule, ScreenConnect.Web" />
+   <add name="ExtensionModule" type="ScreenConnect.ExtensionModule, ScreenConnect.Web" />
+  </httpModules>
+  <httpHandlers>
+   <clear />
+   <add verb="GET,HEAD" path="Report.*" type="ScreenConnect.ReportHandler, ScreenConnect.Web" />
+   <add verb="*" path="*.ashx" type="ScreenConnect.SingletonHandlerFactory, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+   <add verb="GET,HEAD" path="CaptureTranscoder.axd" type="ScreenConnect.CaptureTranscoderHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="ClientIcon.axd" type="ScreenConnect.ClientIconHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="ToolboxItemHandler.axd" type="ScreenConnect.ToolboxItemHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="Bin/*.Client.application" type="ScreenConnect.ClickOnceDirectHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="Bin/*.Client.jnlp" type="ScreenConnect.WebStartDirectHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="Bin/*.Client.zip" type="ScreenConnect.MacBundleDownloadHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="Bin/*.Client.exe" type="ScreenConnect.ClickOnceRunHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="Bin/*.ClientBootstrap.jnlp" type="ScreenConnect.WebStartBootstrapHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="Bin/*.ClientSetup.*" type="ScreenConnect.InstallerHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="Bin/*.jar" type="ScreenConnect.JarHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="Bin/*" type="ScreenConnect.BinHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="*.css" type="ScreenConnect.StyleSheetHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="FavIcon.axd" type="ScreenConnect.FavIconHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="OpenApiDocument.axd" type="ScreenConnect.OpenApiDocumentHandler, ScreenConnect.Web" />
+   <add verb="GET,HEAD" path="WebResource.axd" type="System.Web.Handlers.AssemblyResourceLoader" />
+   <add verb="GET,HEAD" path="*.gif" type="System.Web.DefaultHttpHandler" />
+   <add verb="GET,HEAD" path="*.png" type="System.Web.DefaultHttpHandler" />
+   <add verb="GET,HEAD" path="*.jpg" type="System.Web.DefaultHttpHandler" />
+   <add verb="GET,HEAD" path="*.svg" type="System.Web.DefaultHttpHandler" />
+   <add verb="GET,HEAD" path="*.js" type="System.Web.DefaultHttpHandler" />
+   <add verb="GET,HEAD" path="*.html" type="System.Web.DefaultHttpHandler" />
+   <add verb="GET,HEAD" path="*.woff" type="System.Web.DefaultHttpHandler" />
+   <add verb="GET,HEAD" path="*.woff2" type="System.Web.DefaultHttpHandler" />
+   <add verb="*" path="*.aspx" type="System.Web.UI.PageHandlerFactory" />
+   <add verb="*" path="*" type="System.Web.HttpNotFoundHandler" />
+  </httpHandlers>
+  <httpRuntime executionTimeout="3600" enableVersionHeader="false" maxRequestLength="16384" maxQueryStringLength="16384" targetFramework="4.7.2" />
+  <urlMappings enabled="true">
+   <add url="~/Guest" mappedUrl="~/Guest.aspx" />
+   <add url="~/Host" mappedUrl="~/Host.aspx" />
+   <add url="~/Administration" mappedUrl="~/Administration.aspx" />
+   <add url="~/Login" mappedUrl="~/Login.aspx" />
+   <add url="~/Bin/ScreenConnect.WindowsClient.application" mappedUrl="~/Bin/ScreenConnect.Client.application" />
+   <add url="~/ChangePassword" mappedUrl="~/Login.aspx" />
+   <add url="~/ResetPassword" mappedUrl="~/Login.aspx" />
+  </urlMappings>
+  <healthMonitoring enabled="false" />
+  <globalization culture="auto" uiCulture="auto" />
+  <hostingEnvironment shadowCopyBinAssemblies="false" />
+ </system.web>
+ <appSettings>
+  <add key="AsymmetricKey" value="BwIAAACkAABSU0EyAAgAAAEAAQBVXsSEc+x9uXD3C/7hA6k+CkYq8qNt9ddXTDuk6xtcDXcigKgagdDrv/cdVObs+5PsIEqa3J7G2KVNlw/ruJmp5gWKLUA7CGK0M2xYP/nHrh8PGKb6APgX8+MmK/RI/uG1ObyHzrZSA2zDxqMWtbhBTbrYOR9GzyZRtT2sHBbUlx41DAcKHlRcqgqrm7UWwNY1mXMg1RfS2uCkTVjdU3GL7AKxo9LZAF+NZ31xMPej0IfTdjxJIuBFFPQhiLUl3MrrnM+cDzOJ4R5qzkEDJux1InHPO4447uQgY2C/pH9XXbyUJCVvgFFCPS5LSQJiQ7CvgPW3fKiAsEahrr56vu2y/+JQMc/BsHgeEIUooMvw3rG+CDhqGOC8pJb3rQSh0N5s1z0dJGCvEBGhPe1q97KRz2M/TZCMFxcfXCxFynfDEKRm9rFgOwfj/EQIeI87qywmk63Fhero90+AO9w+xy+zow8pJOHqZg7gZVSAj7PJF4NDxC4SXppaEmI3xpNvv8mrQsmBjlj4GsT/KnYbh1G28Ze8t5elSArwLS3rdRsP6KpGNpPx4mxWbJkvFM++1PXVFl1NMI6iYqfOUZGLiLVGFBM5Oh+SQvPfpdDnL8KJUqzl7DbclODVNjmkRi+wRkvgw0B5aprGRHgH1oKabSBUEdtgjCqOuYWa5Ch/uGkL4yMdNOq6+yswLluXin4UDVYtMg8Cq6GT6aZgbXLrGSYsjC+T6oZt9GUIX9e5Dr9HxPm2RJon1qr4MRZYhenUqjKhqwbQ1N9/mnP+hIe7iN+tEiXBB4Kgj/3L9YhW4GWEAABQcn9f8KZfhekyDZISwyMXLg+UHafiOQHlMSKgYMe2vzCRkV/DBGWuhT04btMi0CVOOByEqRaX1g3HXWYVPQYshFfv05ASMkp9XG4UkwM5u+n43Sfbghz95vwsDx102PL4gAqWGHFg5GmOVpIkA6mnHyq3l7D2OHnrp7KgQ5fjv86Z4toIkkfKhJZx7CWXEwt5PIJrHZ9Fc9mfATudOMnNU2XdD7TqCoHQ1Wa4aEHqaXLIFKQdYBNIsMS9TV/wqvFxv9T3+Gsv/w1rDHy7mh+QpdsNRmdrjroC6u6pVseOyivL9UlyUfE8j0IZMO0cH9OLm4RDz3WaHBdcr5r0hhCsAYIC6JsfI8yrTG/BFsnFkCsNsVYxq3Wzn2NTsPkuxS0sSvSNaHn5icCh3Kc+OYl8Q4c5t0cVqxarO6aBJ+GigEG0hj03Uv815whWnaCWdPGp8uicVN5NuMhD2w5h6yBn6FmiQu3KOYKU7pxyjVIvSMwCcCi6U9TJ7EPYQdJCb+M9GlsDN7oVzfhLPlzpgzd3J5swpfVFrYBKLkUn6a5GZGsr0y6OLf+q/3tK1vJWn2W5C9jOx9sFCQxFAwuWre7IBPkzzA0S0vBJTLMD88ualpaKE35bjtuQpwQAW6mxmLUXJ1jxFewe+jOX0jmR7qU+ngLKUeTkccbHjuJ12IPYzadHIiIjMKsugfa/WjqSoBViasBTuZhgD4u0TMu2/xo=" />
+  <add key="LicenseFilePath" value="App_Data/License.xml" />
+  <add key="SessionGroupFilePath" value="App_Data/SessionGroup.xml" />
+  <add key="SessionEventTriggerFilePath" value="App_Data/SessionEventTrigger.xml" />
+  <add key="ExtensionConfigurationFilePath" value="App_Data/ExtensionConfiguration.xml" />
+  <add key="SessionDirectoryPath" value="App_Data/Session" />
+  <add key="RoleFilePath" value="App_Data/Role.xml" />
+  <add key="UserFilePath" value="App_Data/User.xml" />
+  <add key="ToolboxDirectoryPath" value="App_Data/Toolbox" />
+  <add key="HelperDirectoryPath" value="App_Data/Helper" />
+  <add key="ClientConfigDirectoryPath" value="App_ClientConfig" />
+  <add key="ExtensionsDirectoryPath" value="App_Extensions" />
+  <add key="IsSetup" value="false" />
+  <add key="AllowRemoteSetup" value="true" />
+  <add key="SetupRedirectFilter" value="aspx" />
+  <add key="SetupPage" value="~/SetupWizard.aspx" />
+  <add key="AlreadySetupPage" value="~/Administration.aspx" />
+  <add key="DefaultDocumentName" value="Guest.aspx" />
+  <add key="SupportSessionExpireSeconds" value="0" />
+  <add key="MeetingSessionExpireSeconds" value="0" />
+  <add key="AccessSessionExpireSeconds" value="0" />
+  <add key="HostEligibleExpireSeconds" value="86400" />
+  <add key="AccessTokenExpireSeconds" value="7200" />
+  <add key="WebServerListenUri" value="http://+:8040/" />
+  <add key="RelayListenUri" value="relay://+:8041/" />
+  <add key="AuditLevel" value="Basic" />
+  <add key="AutoReinstallOldVersionClient" value="false" />
+  <add key="GuestInfoRefreshSeconds" value="1200" />
+  <add key="GuestScreenshotMaxScalePercent" value="20" />
+  <add key="GuestScreenshotMaxPixelCount" value="30000" />
+  <add key="MaxCommandResultCharacterCount" value="5000" />
+  <add key="RunCommandKillAfterMilliseconds" value="10000" />
+  <add key="CycleCapturesAfterSeconds" value="1800" />
+  <add key="DefaultSupportSoundCaptureMode" value="Silent" />
+  <add key="DefaultAccessSoundCaptureMode" value="Silent" />
+  <add key="DefaultMeetingSoundCaptureMode" value="AllMicrophones" />
+  <add key="DefaultSupportSessionInfoAttributes" value="ShareClipboard" />
+  <add key="DefaultAccessSessionInfoAttributes" value="ShareClipboard" />
+  <add key="DefaultMeetingSessionInfoAttributes" value="None" />
+  <add key="DefaultScreenQualityLevel" value="High" />
+  <add key="DisableAutoPortForwarding" value="false" />
+  <add key="ShouldRevalidateAccessToken" value="true" />
+  <add key="TicketReissueIntervalSeconds" value="600" />
+  <add key="AllowPasswordAutoComplete" value="false" />
+  <add key="KeepAliveTimeSeconds" value="60" />
+  <add key="ApplicationPingTimeSeconds" value="1250" />
+  <add key="UsePersistentTicketCookie" value="true" />
+  <add key="TrustDeviceExpireDays" value="7" />
+  <add key="WebResourcesDirectoryPath" value="App_WebResources" />
+  <add key="IsRelayTrafficRouted" value="false" />
+  <add key="ConsentExpireSeconds" value="3600" />
+  <add key="InputIdleDisconnectTimeSeconds" value="3600" />
+  <add key="HostSessionDisplayLimit" value="1000" />
+  <add key="DatabaseMaintenancePlan" value="{RunAtLocalTimeMinutes:0,RunEveryDayFrequency:1,Actions:[{ActionID:'19975bb1-f988-4141-a34d-86eb8ed05916',ActionType:0,Parameters:{SessionType:0,DaysAgo:30}},{ActionID:'a13a9897-9be9-4e6a-ad08-6c8256a718ab',ActionType:1,Parameters:{SessionType:0,DaysAgo:30,ConnectionTypes:[1,2]}},{ActionID:'a1b982c1-689b-4809-95cf-aa22c1dc7443',ActionType:2,Parameters:{SessionType:0,DaysAgo:30,EventTypesIncludedOrExcluded:false,EventTypes:[32]}},{ActionID:'3c496124-c702-4665-b2ee-cf897141795f',ActionType:0,Parameters:{SessionType:1,DaysAgo:30}},{ActionID:'c3204ce3-8afa-4cc2-9bfc-69c3e2badb64',ActionType:1,Parameters:{SessionType:1,DaysAgo:30,ConnectionTypes:[1,2]}},{ActionID:'8f90a408-55d0-4292-be0e-701ba05b216d',ActionType:2,Parameters:{SessionType:1,DaysAgo:30,EventTypesIncludedOrExcluded:false,EventTypes:[32]}},{ActionID:'1a2a2250-bd6c-43fa-8e55-712c5da508ab',ActionType:0,Parameters:{SessionType:2,DaysAgo:30}},{ActionID:'c4ead939-a508-4192-b392-71198448c923',ActionType:1,Parameters:{SessionType:2,DaysAgo:30,ConnectionTypes:[1,2]}},{ActionID:'23c831a5-93b2-4e60-915c-a2451515c969',ActionType:2,Parameters:{SessionType:2,DaysAgo:30,EventTypesIncludedOrExcluded:false,EventTypes:[32]}},{ActionID:'d34bbbe9-729d-4fef-a843-753f7bdc0c92',ActionType:3,Parameters:{DaysAgo:7}},{ActionID:'c01ebd29-bdf8-4d51-b7c4-0b88a80a736c',ActionType:4,Parameters:{}}]}" />
+  <add key="SessionTypeDisplayOrder" value="Support,Meeting,Access" />
+  <add key="CookieSameSiteMode" value="Lax" />
+  <add key="SecurityEventTriggerFilePath" value="App_Data/SecurityEventTrigger.xml" />
+  <add key="MaxLongestTicketReissueIntervalSeconds" value="36000" />
+  <add key="OperationLimitRequestsPerPeriod" value="100" />
+  <add key="OperationLimitPeriodMillisecondCount" value="60000" />
+  <add key="OperationLimitPruneIntervalMillisecondCount" value="10000" />
+  <add key="InstanceIdentifierBlob" value="BgIAAACkAABSU0ExAAgAAAEAAQBVXsSEc+x9uXD3C/7hA6k+CkYq8qNt9ddXTDuk6xtcDXcigKgagdDrv/cdVObs+5PsIEqa3J7G2KVNlw/ruJmp5gWKLUA7CGK0M2xYP/nHrh8PGKb6APgX8+MmK/RI/uG1ObyHzrZSA2zDxqMWtbhBTbrYOR9GzyZRtT2sHBbUlx41DAcKHlRcqgqrm7UWwNY1mXMg1RfS2uCkTVjdU3GL7AKxo9LZAF+NZ31xMPej0IfTdjxJIuBFFPQhiLUl3MrrnM+cDzOJ4R5qzkEDJux1InHPO4447uQgY2C/pH9XXbyUJCVvgFFCPS5LSQJiQ7CvgPW3fKiAsEahrr56vu2y" />
+ </appSettings>
+ <system.net>
+  <mailSettings>
+   <smtp from="host@screenconnect.com">
+    <network defaultCredentials="true" enableSsl="false" />
+   </smtp>
+  </mailSettings>
+ </system.net>
+ <system.codedom>
+  <compilers>
+   <compiler compilerOptions="/langversion:latest /nowarn:1685,1998,1701 /define:SC_23_2,SC_23_1,SC_23_0,SC_22_10,SC_22_9,SC_22_8,SC_22_7,SC_22_6,SC_22_5,SC_22_4,SC_22_3,SC_22_2,SC_22_1,SC_22_0,SC_21_15,SC_21_14,SC_21_13,SC_21_12,SC_21_11,SC_21_10,SC_21_9,SC_21_8,SC_21_7,SC_21_6,SC_21_5,SC_21_4,SC_21_3,SC_21_2,SC_21_1,SC_21_0,SC_20_13,SC_20_12,SC_20_11,SC_20_10,SC_20_9,SC_20_8,SC_20_7,SC_20_6,SC_20_5,SC_20_4,SC_20_3,SC_20_2,SC_20_1,SC_20_0" language="c#;cs;csharp" extension=".cs" warningLevel="4" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+    <providerOption name="CompilerVersion" value="v4.0" />
+    <providerOption name="WarnAsError" value="false" />
+    <providerOption name="UseAspNetSettings" value="false" />
+   </compiler>
+  </compilers>
+ </system.codedom>
+ <system.serviceModel>
+  <client>
+   <endpoint address="net.pipe://localhost/scsm" binding="customBinding" contract="ScreenConnect.ISessionManagerChannel" />
+   <endpoint address="net.pipe://localhost/SCSecurityManager" binding="customBinding" contract="ScreenConnect.ISecurityManagerChannel" />
+  </client>
+  <services>
+   <service name="ScreenConnect.SessionManager">
+    <endpoint address="net.pipe://localhost/scsm" binding="customBinding" contract="ScreenConnect.ISessionManager" />
+   </service>
+   <service name="ScreenConnect.SecurityManager">
+    <endpoint address="net.pipe://localhost/SCSecurityManager" binding="customBinding" contract="ScreenConnect.ISecurityManager" />
+   </service>
+  </services>
+ </system.serviceModel>
+ <system.data>
+  <DbProviderFactories>
+   <clear />
+   <add name="SQLite" invariant="SQLite" description="SQLite" type="ScreenConnect.SQLite.SQLiteFactory, ScreenConnect.Server" />
+  </DbProviderFactories>
+ </system.data>
+ <connectionStrings>
+  <add name="SessionDatabase" providerName="SQLite" connectionString="Data Source=|DataDirectory|/Session.db; DateTimeKind=Utc; Foreign Keys=true; Page Size=4096; Journal Mode=WAL; BaseSchemaName=; Cache Size=1000; Memory Mapped Size=10000000000" />
+  <add name="SecurityDatabase" providerName="SQLite" connectionString="Data Source=|DataDirectory|/Security.db; DateTimeKind=Utc; Foreign Keys=true; Page Size=4096; Journal Mode=WAL; BaseSchemaName=; Cache Size=1000; Memory Mapped Size=10000000000" />
+ </connectionStrings>
+ <runtime>
+  <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+   <dependentAssembly>
+    <assemblyIdentity name="Microsoft.Bcl.AsyncInterfaces" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+    <bindingRedirect oldVersion="0.0.0.0-7.0.0.0" newVersion="7.0.0.0" />
+   </dependentAssembly>
+   <dependentAssembly>
+    <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+    <bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
+   </dependentAssembly>
+   <dependentAssembly>
+    <assemblyIdentity name="System.Threading.Tasks.Extensions" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+    <bindingRedirect oldVersion="0.0.0.0-4.2.0.1" newVersion="4.2.0.1" />
+   </dependentAssembly>
+   <dependentAssembly>
+    <assemblyIdentity name="System.Collections.Immutable" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+    <bindingRedirect oldVersion="0.0.0.0-7.0.0.0" newVersion="7.0.0.0" />
+   </dependentAssembly>
+   <dependentAssembly>
+    <assemblyIdentity name="System.Memory" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+    <bindingRedirect oldVersion="0.0.0.0-4.0.1.2" newVersion="4.0.1.2" />
+   </dependentAssembly>
+  </assemblyBinding>
+ </runtime>
+</configuration>

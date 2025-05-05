@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExtensionManifest>
+	<Version>1.2.4</Version>
+	<Name>Agent Deployer</Name>
+	<Author>ConnectWise Labs</Author>
+	<ShortDescription>Download a utility to deploy unattended clients to Windows machines on a subnet. Requires ScreenConnect 20.13+ and .NET 4.0+</ShortDescription>
+	<RequiredLicenseCapabilities>LoadRmmExtension</RequiredLicenseCapabilities>
+	<Components>
+		<ClientScriptInitializer SourceFile="Initializer.js" MinProductVersionInclusive="20.13" />
+		<WebResourcesDefinition SourceFile="Web.en-US.resx" MinProductVersionInclusive="20.13" />
+		<DynamicToolboxProviderDefinition SourceFile="ToolboxProvider.cs" MinProductVersionInclusive="20.13">
+			<SourceFile>AgentDeployerFileBuilder.cs</SourceFile>
+		</DynamicToolboxProviderDefinition>
+	</Components>
+	<Settings>
+	</Settings>
+</ExtensionManifest>

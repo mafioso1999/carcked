@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<Roles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Role>
+    <Name>ban</Name>
+    <PermissionEntries />
+    <CreationDate>2025-05-03T21:28:34</CreationDate>
+  </Role>
+  <Role>
+    <Name>user</Name>
+    <PermissionEntries>
+      <PermissionEntry Name="CreateSupportSession" AccessControlType="Allow" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ViewSessionGroup" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ViewSessionGuestScreenshot" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="JoinSession" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="DeleteSession" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="EditSession" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunCommandOutsideSession" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="AddNoteToSession" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RemoveNoteFromSession" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RemoveCommandFromSession" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="TransferFiles" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunPersonalToolAsUser" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunPersonalToolAsSystemSilently" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="PrintInSession" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunSharedToolAsUser" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunSharedToolAsSystemSilently" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="HostSessionWithoutConsent" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ManageCredentials" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="SwitchLogonSession" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="CreateDelegatedAccessToken" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="EnableBackstageLogonSession" AccessControlType="Allow" SessionGroupFilter="SpecificSupportSessionGroup">
+        <SessionGroupPathSegment>My Sessions</SessionGroupPathSegment>
+      </PermissionEntry>
+    </PermissionEntries>
+    <CreationDate>2025-05-03T21:28:34</CreationDate>
+  </Role>
+  <Role>
+    <Name>Control Host</Name>
+    <PermissionEntries>
+      <PermissionEntry Name="CreateSupportSession" AccessControlType="Allow" />
+      <PermissionEntry Name="BuildAccessInstaller" AccessControlType="Allow" />
+      <PermissionEntry Name="CreateMeetingSession" AccessControlType="Allow" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ViewSessionGroup" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ViewSessionGuestScreenshot" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="JoinSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="DeleteSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="TransferSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="EditSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunCommandOutsideSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="AddNoteToSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RemoveNoteFromSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RemoveCommandFromSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ReinstallSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="UninstallSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="TransferFiles" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunPersonalToolAsUser" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunPersonalToolAsSystemSilently" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="PrintInSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunSharedToolAsUser" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunSharedToolAsSystemSilently" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="HostSessionWithoutConsent" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ManageCredentials" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="SwitchLogonSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="CreateDelegatedAccessToken" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="EnableBackstageLogonSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RespondToElevationRequest" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RespondToAdministrativeLogonRequest" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+    </PermissionEntries>
+    <CreationDate>2025-05-03T21:28:34</CreationDate>
+  </Role>
+  <Role>
+    <Name>Control Administrator</Name>
+    <PermissionEntries>
+      <PermissionEntry Name="Administer" AccessControlType="Allow" />
+      <PermissionEntry Name="CreateSupportSession" AccessControlType="Allow" />
+      <PermissionEntry Name="BuildAccessInstaller" AccessControlType="Allow" />
+      <PermissionEntry Name="CreateMeetingSession" AccessControlType="Allow" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ViewSessionGroup" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ViewSessionGuestScreenshot" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="JoinSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="DeleteSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="TransferSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="EditSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunCommandOutsideSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="AddNoteToSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RemoveNoteFromSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RemoveCommandFromSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ReinstallSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="UninstallSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="TransferFiles" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunPersonalToolAsUser" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunPersonalToolAsSystemSilently" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="PrintInSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunSharedToolAsUser" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunSharedToolAsSystemSilently" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="HostSessionWithoutConsent" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ManageCredentials" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="SwitchLogonSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="CreateDelegatedAccessToken" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="EnableBackstageLogonSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RespondToElevationRequest" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RespondToAdministrativeLogonRequest" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+    </PermissionEntries>
+    <CreationDate>2025-05-03T21:28:34</CreationDate>
+  </Role>
+  <Role>
+    <Name>mafiso</Name>
+    <PermissionEntries>
+      <PermissionEntry Name="CreateSupportSession" AccessControlType="Allow" />
+      <PermissionEntry Name="BuildAccessInstaller" AccessControlType="Allow" />
+      <PermissionEntry Name="ManageSessionGroups" AccessControlType="Allow" />
+      <PermissionEntry Name="CreateMeetingSession" AccessControlType="Allow" />
+      <PermissionEntry Name="ManageSharedToolbox" AccessControlType="Allow" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ViewSessionGroup" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ViewSessionGuestScreenshot" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="JoinSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="DeleteSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="TransferSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="EditSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunCommandOutsideSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="AddNoteToSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RemoveNoteFromSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RemoveCommandFromSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ReinstallSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="UninstallSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="TransferFiles" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="PrintInSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunSharedToolAsUser" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunSharedToolAsSystemSilently" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunPersonalToolAsUser" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RunPersonalToolAsSystemSilently" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="HostSessionWithoutConsent" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="ManageCredentials" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="SwitchLogonSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="CreateDelegatedAccessToken" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="EnableBackstageLogonSession" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RespondToElevationRequest" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+      <PermissionEntry xsi:type="SessionPermissionEntry" Name="RespondToAdministrativeLogonRequest" AccessControlType="Allow" SessionGroupFilter="AllSessionGroups" />
+    </PermissionEntries>
+    <CreationDate>2025-05-05T18:30:30.0991634Z</CreationDate>
+  </Role>
+</Roles>

@@ -1,0 +1,213 @@
+.ConfigDataTable {
+	display: block;
+	min-width: 620px;
+	overflow-y: scroll;
+}
+
+.ConfigDataTable td:nth-child(1) {
+	min-width: 450px;
+}
+
+.ConfigDataTable td:nth-child(n+2) {
+	min-width: 150px;
+}
+
+.ConfigColumnHeader {
+	font-weight: bold;
+	text-align: center;
+	opacity: 0.6;
+}
+
+.ConfigDataTable *:has(> .ConfigColumnHeader) {
+	vertical-align: bottom;
+}
+
+.ConfigToggleBlock p:nth-child(1), .ConfigTextBoxBlock p:nth-child(1), .ConfigDropDownBlock p:nth-child(1), .ConfigTextAreaBlock p:nth-child(1) {
+	font-weight: bold;
+	opacity: 0.6;
+}
+
+.ConfigToggleCellNotDefault {
+	background-color: rgba(128,128,128,0.3);
+}
+
+.ConfigDescription {
+	max-height: 100px;
+	margin: 8px 50px 8px 0 !important;
+}
+
+.ConfigDescription p:nth-child(1) {
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+.ConfigDescription p:nth-child(2) {
+	color: darkgrey;
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.ConfigDropDownBlock, .ConfigTextBoxBlock {
+	min-height: 50px;
+}
+
+.ConfigTextBoxBlock > .ConfigColumnHeader {
+	margin-bottom: 4px;
+}
+
+.ConfigInputBoxChunk {
+	display: inline-flex;
+	margin: 0px;
+	align-self: center;
+}
+
+.ConfigInputBoxWithSuffix {
+	width: 60px !important;
+}
+
+.ConfigInputBoxNoSuffix {
+	width: 100% !important;
+}
+
+.ConfigInputBoxChunk > p {
+	padding-left: 10px;
+	margin: 0px;
+}
+
+.ConfigTextAreaBlock textarea {
+	height: 95px;
+	resize: vertical;
+}
+
+.ConfigWelcomePageBlock {
+	margin-bottom: 25px;
+
+	a {
+		display: table;
+		margin-left: 10px;
+		margin-bottom: 15px;
+	}
+}
+
+
+.ConfigTableSubRow td:nth-child(1) p {
+	padding-left: 50px;
+	font-weight: bold;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.ConfigBorderlessRow > td {
+	border-bottom: 0px;
+}
+
+.ConfigDropDown > select {
+	width: 145px;
+}
+
+.ConfigToggleBlock {
+	height: 50px;
+}
+
+.ConfigBitmaskTable {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.ConfigBitmaskTable th {
+	font-size: 12px;
+	text-align: center;
+	border-bottom: 1px solid #CCC;
+	opacity: 0.6;
+}
+
+.ConfigBitmaskTable td {
+	text-align: center;
+	padding: 4px;
+	border-bottom: 1px solid #CCC;
+}
+
+.ConfigBitmaskTableRowHeader {
+	margin: 10px 0px 10px 0px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.ConfigDataTable tr > th:nth-child(2) {
+	text-align: center;
+}
+
+.ConfigDataTable td {
+	padding-bottom: 10px !important;
+	padding-top: 10px !important;
+}
+
+.ConfigToggle {
+	text-align: center;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.ConfigSaveButton[disabled] {
+	background-color: #A7A7A7;
+	background-image: none;
+}
+
+p.OptionalCautionText {
+	color: #f18021;
+	background: url(../Images/NotificationWarningIcon.svg) no-repeat 6px 6px;
+	background-size: 20px;
+	border: 1px solid #f18021;
+	border-radius: 3px;
+	padding: 8px;
+	padding-left: 30px;
+	margin: 8px 0;
+}
+
+.ModalDialog {
+	&.BitmaskSettings {
+		> * {
+			width: 1880px;
+		}
+	}
+
+	&.QuickSettings,
+	&.OtherSettings {
+		> * {
+			width: 1005px;
+		}
+	}
+
+
+	&.Settings {
+		> * {
+			width: 1100px;
+		}
+
+		.CollapsiblePanel .Header {
+			background-color: #F5F5F5;
+			color: #212121;
+			position: sticky;
+			top: 0px;
+			z-index: 1;
+			padding: 8px 16px;
+		}
+
+		.CollapsiblePanel .Content {
+			padding: 0 16px;
+		}
+	}
+
+	&.ClientMenuSystemOptionsSettings,
+	&.ClientMenuToolboxFileTransferSettings,
+	&.ClientMenuAnnotationHelperSettings,
+	&.ClientMenuViewSoundMessagesSettings,
+	&.ClientMenuEssentialsSettings,
+	&.ClientMenuParticipantScreenCaptureSettings {
+		> * {
+			width: 670px;
+		}
+	}
+}
